@@ -1,0 +1,20 @@
+.bannerTag {
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  --tw-bg-opacity: 1;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.bannerTag p {
+  margin-bottom: 0 !important;
+  font-weight: 500;
+}

@@ -1,0 +1,22 @@
+.commontitle {
+    text-align: center;
+}
+
+.title h2 {
+    width: 900px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+
+.subtitle p {
+    width: 650px;
+}
+
+.subtitle p {
+    width: 670px;
+    color: rgb(75 85 99);
+    font-size: 20px;
+    line-height: 28px;
+
+}

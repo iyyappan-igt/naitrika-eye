@@ -1,0 +1,159 @@
+.mainContainer {
+  background-color: #1d42ab;
+    padding: 80px 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title span{
+    color: rgb(250 204 21 );
+}
+
+.description{
+    color: rgb(219 234 254 );
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 20px 0;
+}
+
+
+.cardsContainer{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 25px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 33%;
+    background-color: #ffffff1a;
+}
+
+.cardContent{
+    font-size: .875rem;
+  line-height: 1rem;
+  text-align: left;
+}
+.cardContent h6{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.cardContent p{
+    color: rgb(191 219 254 );
+    margin-bottom: 0;
+}
+
+.schedule{
+    display:flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: start;
+     margin: 40px;
+     width: 100%;
+}
+
+.schedule button{
+  color: black;
+}
+
+.scheduleDetails{
+  margin-top: 15px;
+  color: rgb(191 219 254 );
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 5px;
+}
+
+.preferSpeak{
+  width: 75%;
+}
+
+.buttonGroup{
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  margin: 20px 10px 0px;
+}
+
+.buttonGroup button{
+  flex: 1;          /* let each button take equal space */
+  min-width: 0;  
+
+}
+  .buttonGroup button:nth-of-type(1):hover{
+    background-color: rgb(21 128 61);
+  }
+
+  .timeOffer{
+    background-color: #dc262633;
+    border:1px solid #ef44444d;
+    border-radius: .5rem;
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+  }
+
+
+  .timeOffer h6{
+    color: rgb(252 165 165 );
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .timeOffer p{
+    margin-bottom: 0;
+  }
+
+  .timeOffer p span{
+    font-weight: 700;
+  }
+  .circle{
+    display: inline-block;
+background-color: rgb(249 115 22);
+width: 0.75rem;
+height: 0.75rem;
+border-radius: 50%;
+margin-right: 15px;
+animation: pulse 2s cubic-bezier(.4,0,.6,1) infinite;
+}
+
+
+
+  @keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+}
