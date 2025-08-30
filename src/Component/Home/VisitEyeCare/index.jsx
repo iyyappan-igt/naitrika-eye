@@ -51,11 +51,9 @@ const VisitEyeCare = () => {
                 <div className={styles.location}>
                     <iframe
                         src="https://www.google.com/maps?q=1st+Floor,+Opp.+Tahasildar+Office,+Komapalli,+Berhampur,+Odisha+760004&output=embed"
-                        width="600"
-                        height="350"
-                        style={{ border: "0", borderRadius: "10px" }}
                         allowfullscreen=""
                         loading="lazy"
+                        className={styles.iframemap}
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                     <div className={styles.buttonGroup}>

@@ -53,6 +53,15 @@
     border-radius: .5rem;
     width: 33%;
     background-color: #ffffff1a;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .2s;
+      cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .cardContent{
@@ -111,6 +120,13 @@
 }
   .buttonGroup button:nth-of-type(1):hover{
     background-color: rgb(21 128 61);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  }
+
+  .buttonGroup button:nth-of-type(2):hover{
+    background-color: rgb(30 64 175);
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   }
 
   .timeOffer{
@@ -119,6 +135,13 @@
     border-radius: .5rem;
     margin-top: 2.5rem;
     padding: 1.5rem;
+  }
+  
+  .timeOffer button:hover {
+    background-color: #dc2626 !important;
+    color: white !important;
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   }
 
 
@@ -155,5 +178,109 @@ animation: pulse 2s cubic-bezier(.4,0,.6,1) infinite;
   50% {
     transform: scale(1.2);
     opacity: 0.5;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .mainContainer {
+    padding: 60px 10px;
+  }
+  
+  .container {
+    width: 85%;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .description {
+    font-size: 1.25rem;
+    width: 90%;
+    margin: 15px 0;
+  }
+  
+  .cardsContainer {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+  
+  .schedule {
+    margin: 30px;
+  }
+  
+  .scheduleDetails {
+    font-size: 1rem;
+  }
+  
+  .preferSpeak {
+    width: 85%;
+  }
+  
+  .buttonGroup {
+    margin: 15px 10px 0px;
+  }
+  
+  .timeOffer {
+    padding: 1.25rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContainer {
+    padding: 50px 10px;
+  }
+  
+  .container {
+    width: 95%;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .description {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+  
+  .cardsContainer {
+    flex-direction: column;
+  }
+  
+  .card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .schedule {
+    margin: 20px 0;
+  }
+  
+  .scheduleDetails {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+  }
+  
+  .preferSpeak {
+    width: 100%;
+  }
+  
+  .buttonGroup {
+    flex-direction: column;
+  }
+  
+  .timeOffer {
+    padding: 1.25rem;
   }
 }

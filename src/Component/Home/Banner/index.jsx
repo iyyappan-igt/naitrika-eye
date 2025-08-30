@@ -18,7 +18,7 @@ const Banner = () => {
                          <Button name="Book Your Appointment Now" isbtn1={true} icon={"calendar"} bgcolor=" #2563eb" />
                         <button className={styles.button2}><Phone size={20} />Call Now</button>
                     </div>
-                    <hr style={{ border: "1px solid #c7c3c3ff", width: "90%" }} />
+                    <hr className={styles.divider} />
                     <div className={styles.bannerDetails}>
                         <div className={styles.detailItem}>
                             <h5>1000+</h5>

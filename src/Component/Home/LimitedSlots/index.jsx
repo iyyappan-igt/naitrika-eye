@@ -43,7 +43,7 @@ const LimitedSlots = () => {
                         </div>
                     </div>
                     <div className={styles.onlySlots}>
-                        <h5><span className={styles.circle}></span>Only 8 slots remaining this month</h5>
+                        <div className={styles.slotsTitle}><div className={styles.circle}></div><h5>Only 8 slots remaining this month</h5></div>
                         <p>Due to high demand for our advanced FLACS technology, appointment slots are filling quickly. Book now to secure your preferred date and avoid waiting.</p>
                     </div>
                     <div className={styles.secureSlot}>
