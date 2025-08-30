@@ -50,15 +50,6 @@
   color: rgb(75 85 99);
 }
 
-/* .clockIcon {
-  background-color: #ffedd5;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .clockIcon h3{
   background-color: #ffedd5;
@@ -104,7 +95,43 @@
   margin: 10px 0px;
 }
 
-/* Responsive styles */
+@media (max-width: 1400px) {
+  .container {
+    width: 80%;
+  }
+
+  .slotAvailable h2 {
+    font-size: 1.75rem;
+  }
+
+  .slotAvailable p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 85%;
+    padding: 70px 10px;
+  }
+
+  .mainCard {
+    padding: 2.5rem;
+  }
+
+  .slotAvailable h2 {
+    font-size: 1.6rem;
+  }
+
+  .slotAvailable p {
+    font-size: 1.05rem;
+  }
+
+  .card {
+    padding: 0.9rem;
+  }
+}
+
 @media (max-width: 992px) {
   .mainContainer {
     min-height: 650px;
@@ -198,12 +225,97 @@
   .slotAvailable p {
     text-align: start;
     font-size: 1.2rem;
+  }
+  
+  .slotAvailable h2 {
+    font-size: 1.5rem;
+    text-align: start;
     line-height: 1.5 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainContainer{
+    display: flex;
+    align-items: center;
+  }
+  .container {
+    width: 97%;
+    padding: 30px 0px;
+  }
+
+  .mainCard {
+    padding: 1.2rem;
+    border-left-width: 3px;
+  }
+
+  .slotAvailable {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .slotAvailable h2 {
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+
+  .slotAvailable p {
+    font-size: 0.95rem;
+    line-height: 1.4;
   }
 
   .cardsContainer {
     flex-direction: column;
+    gap: 10px;
   }
+
+  .card {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 10px;
+  }
+
+  .cardContent h6 {
+    font-size: 0.85rem;
+  }
+
+  .cardContent p {
+    font-size: 0.75rem;
+  }
+
+  .slotsTitle h5 {
+    font-size: 0.9rem;
+  }
+
+  .onlySlots p {
+    font-size: 0.85rem;
+  }
+
+  .secureSlot button {
+    font-size: 0.9rem;
+  }
+
+  .secureSlot p {
+    font-size: 0.8rem;
+  }
+
+  .subCards {
+    gap: 15px;
+  }
+
+  .subCard1, .subCard2 {
+    padding: 1rem;
+  }
+
+  .subCard1 h5, .subCard2 h5 {
+    font-size: 1rem;
+  }
+
+  .subCard1 p, .subCard2 p {
+    font-size: 0.85rem;
+  }
+}
+
 
   .slotsTitle {
     justify-content: center;
@@ -224,7 +336,6 @@
   .card {
     width: 100%;
   }
-}
 
 .cardContent h5 {
   margin-bottom: 0px;

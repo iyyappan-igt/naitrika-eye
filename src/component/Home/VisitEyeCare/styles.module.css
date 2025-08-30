@@ -166,6 +166,38 @@
 
 
 /* Responsive styles */
+@media (max-width: 1400px) {
+  .container {
+    width: 95%;
+    gap: 35px;
+  }
+
+  .iframemap {
+    width: 550px;
+    height: 330px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+    gap: 30px;
+  }
+
+  .cardContainer {
+    gap: 35px;
+  }
+
+  .card {
+    padding: 1.4rem;
+  }
+
+  .iframemap {
+    width: 500px;
+    height: 320px;
+  }
+}
+
 @media (max-width: 992px) {
   .mainContainer {
     padding: 60px 10px;
@@ -204,6 +236,11 @@
     height: 300px;
   }
 
+  .iframemap {
+    width: 100%;
+    height: 300px;
+  }
+
   .gettingFree {
     padding: 1.25rem;
   }
@@ -216,6 +253,10 @@
   .buttonGroup {
     gap: 15px;
     margin: 15px 0;
+    flex-wrap: wrap;
+  }
+  .buttonGroup button{
+    width: 100%;
   }
 
   .emergency {
@@ -275,5 +316,74 @@
   .emergency {
     margin-top: 30px;
   }
+}
 
+@media (max-width: 576px) {
+  .mainContainer {
+    padding: 50px 5px 60px;
+  }
+
+  .container {
+    width: 100%;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .cardContainer {
+    gap: 15px;
+  }
+
+  .card {
+    padding: 0.9rem;
+  }
+
+  .card .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .cardContent h5 {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+  }
+
+  .cardContent p {
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+  }
+
+  .iframemap {
+    height: 250px;
+  }
+
+  .buttonGroup {
+    margin: 15px 0;
+    gap: 8px;
+  }
+
+  .buttonGroup button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .emergency {
+    margin-top: 20px;
+    padding: 1rem;
+  }
+
+  .emergency h5 {
+    font-size: 1rem;
+  }
+
+  .emergency p {
+    font-size: 0.8rem;
+  }
+
+  .emergency button {
+    padding: 10px 20px !important;
+  }
+
+  .emergency button h6 {
+    font-size: 14px !important;
+  }
 }

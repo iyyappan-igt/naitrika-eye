@@ -34,11 +34,10 @@
   margin: 20px 0;
 }
 
-
 .cardsContainer {
   display: flex;
   justify-content: start;
-  align-items: start;
+  align-items: stretch;
   gap: 25px;
   margin-top: 15px;
   width: 100%;
@@ -50,22 +49,27 @@
   justify-content: center;
   gap: 15px;
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   width: 33%;
   background-color: #ffffff1a;
   transition-property: all;
-  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-  transition-duration: .2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.2s;
   cursor: pointer;
 }
-
+.cardWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
 .card:hover {
   transform: scale(1.02);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .cardContent {
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1rem;
   text-align: left;
 }
@@ -119,7 +123,6 @@
   flex: 1;
   /* let each button take equal space */
   min-width: 0;
-
 }
 
 .buttonGroup button:nth-of-type(1):hover {
@@ -136,7 +139,7 @@
 .timeOffer {
   background-color: #dc262633;
   border: 1px solid #ef44444d;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin-top: 2.5rem;
   padding: 1.5rem;
 }
@@ -147,7 +150,6 @@
   transform: translateY(-2px) scale(1.01);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
-
 
 .timeOffer h6 {
   color: rgb(252 165 165);
@@ -171,13 +173,10 @@
   height: 0.75rem;
   border-radius: 50%;
   margin-right: 5px;
-  animation: pulse 2s cubic-bezier(.4, 0, .6, 1) infinite;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-
-
 @keyframes pulse {
-
   0%,
   100% {
     transform: scale(1);
@@ -191,6 +190,38 @@
 }
 
 /* Responsive styles */
+@media (max-width: 1400px) {
+  .container {
+    width: 80%;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .description {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 85%;
+  }
+
+  .title {
+    font-size: 2.6rem;
+  }
+
+  .description {
+    font-size: 1.3rem;
+  }
+
+  .preferSpeak {
+    width: 85%;
+  }
+}
+
 @media (max-width: 992px) {
   .mainContainer {
     padding: 60px 10px;
@@ -245,11 +276,11 @@
 
 @media (max-width: 768px) {
   .mainContainer {
-    padding: 50px 10px;
+    padding: 50px 5px;
   }
 
   .container {
-    width: 95%;
+    width: 100%;
   }
 
   .title {
@@ -262,11 +293,10 @@
   }
 
   .cardsContainer {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .card {
-    width: 100%;
     margin-bottom: 15px;
   }
 
@@ -274,6 +304,9 @@
     margin: 20px 0;
   }
 
+  .schedule button{
+    width: 80% ;
+  }
   .scheduleDetails {
     flex-direction: column;
     align-items: center;
@@ -287,9 +320,73 @@
 
   .buttonGroup {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0 0;
+  }
+
+  .buttonGroup button{
+    width: 85%;
   }
 
   .timeOffer {
     padding: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainContainer {
+    padding: 40px 10px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .card {
+    padding: 0.8rem;
+  }
+
+  .cardContent h6 {
+    font-size: 0.9rem;
+  }
+
+  .cardContent p {
+    font-size: 0.8rem;
+  }
+
+  .schedule button {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .scheduleDetails p {
+    font-size: 0.9rem;
+  }
+
+  .preferSpeak h5 {
+    font-size: 1rem;
+  }
+
+  .timeOffer {
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .timeOffer h6 {
+    font-size: 0.9rem;
+  }
+
+  .timeOffer p {
+    font-size: 0.9rem;
   }
 }
