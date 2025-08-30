@@ -117,25 +117,29 @@ font-size: 2.25rem;
 /* Responsive styles */
 @media (max-width: 992px) {
   .mainContainer {
-    min-height: 850px;
+    min-height: 950px;
+    padding-bottom: 50px;
   }
   
   .container {
     padding: 60px 10px 0;
     gap: 15px;
+    display: flex;
+    flex-direction: column;
   }
   
   .mainImageContainer {
-    width: 45%;
+    width: 100%;
   }
   
   .containerImage {
     height: 450px;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
   }
   
   .containerContent {
-    width: 55%;
+    width: 100%;
     text-align: left;
   }
   
