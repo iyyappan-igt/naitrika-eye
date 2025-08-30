@@ -1,0 +1,129 @@
+.consultsec {
+    padding: 80px 0px;
+    background-color: #f9fafb;
+
+
+}
+
+.greenpoint {
+    width: 8px;
+    height: 8px;
+    background-color: rgb(34 197 94);
+    border-radius: 50px;
+}
+
+.consultcard {
+    background-color: #fff;
+    padding: 50px 30px 30px 30px;
+    position: relative;
+    width: 320px;
+}
+
+.consultcard h3 {
+    background-color: rgb(219 234 254);
+    color: #2563eb;
+}
+
+.consultcard h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+
+}
+
+.consultcard p {
+    color: #4b5563;
+    line-height: 1.625;
+    margin: 20px 0px;
+    height: 80px;
+}
+
+.consultcard h6 {
+    color: rgb(75 85 99);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+
+.markpoint {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 500px;
+    background-color: #2563eb;
+    top: -20px;
+    left: -20px;
+}
+
+.stories p {
+    font-size: 16px;
+    color: rgb(75 85 99);
+    margin: 20px;
+}
+
+.stories h4 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.stories {
+    background-color: #fff;
+    padding: 40px;
+
+}
+
+.stories button:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    background-color: #0b48ce !important;
+}
+
+.stories button {
+    transition: all 0.2s ease-in-out;
+
+}
+
+@media (width < 1200px) {
+
+    @media (width < 1200px) {
+
+        .consultcard p {
+            height: 68px;
+            font-size: 15px;
+        }
+
+        .consultcard h4 {
+            font-size: 18px;
+        }
+
+    }
+
+}
+
+@media (width < 768px) {
+    .consultsec {
+        padding: 60px 0px;
+    }
+
+    .consultcard {
+        width: 100%;
+    }
+
+    .consultcard p {
+        height: fit-content;
+    }
+
+    .stories h4 {
+        font-size: 20px;
+    }
+
+    .stories p {
+        font-size: 15px;
+    }
+}

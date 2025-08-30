@@ -1,0 +1,43 @@
+.commonbutton {
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: none !important;
+    cursor: pointer;
+    color: #ffff;
+
+}
+
+.commonbutton:hover {
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: none !important;
+
+}
+
+.commonbutton h6 {
+    font-size: 18px;
+    font-weight: 550;
+    margin: 0px;
+}
+
+.commonbutton svg {
+    width: 20px;
+    height: fit-content;
+    object-fit: cover;
+}
+
+@media (width < 992px) {
+
+    .commonbutton h6 {
+        font-size: 16px;
+    }
+
+}
+
+@media (width < 576px) {
+
+    .commonbutton{
+        padding: 20px;
+    }
+    
+}

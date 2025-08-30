@@ -5,8 +5,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #000000;
   }
 }
 
@@ -14,6 +14,8 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: "Inter", sans-serif !important;
+
 }
 
 body {
@@ -35,8 +37,36 @@ a {
   text-decoration: none;
 }
 
+.commonshadow {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  border-radius: 15px;
+}
+
+.slick-dots li button::before {
+  font-size: 12px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: rgb(37 99 235) !important;
+}
+
+.slick-dots li {
+  display: inline-block;
+  width: 10px;
+  text-align: center;
+  height: fit-content;
+}
+
+.slick-arrow{
+  display: none !important;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 }
+
+
