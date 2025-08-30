@@ -1,7 +1,12 @@
+import Banner from "@/component/Home/Banner";
+import BestDeserve from "@/component/Home/BestDeserve";
 import Checkup from "@/component/Home/Checkup";
 import Consultation from "@/component/Home/Consultation";
+import EyeCareSpecialist from "@/component/Home/EyeCareSpecialist";
+import LimitedSlots from "@/component/Home/LimitedSlots";
 import Testimonal from "@/component/Home/Testimonal";
 import Vision from "@/component/Home/Vision";
+import VisitEyeCare from "@/component/Home/VisitEyeCare";
 import { CheckupData } from "@/constant/checkup";
 import { consultationData } from "@/constant/consultation";
 import { TestimonalData } from "@/constant/testimonal";
@@ -10,13 +15,23 @@ import { VisionData } from "@/constant/vision";
 const HomePageComponent = () => {
   return (
     <>
+      <Banner />
+
       <Vision visionData={VisionData} />
 
-      <Checkup checkupData={CheckupData}/>
+      <EyeCareSpecialist />
 
-      <Testimonal testimonalData={TestimonalData}/>
+      <Checkup checkupData={CheckupData} />
 
-      <Consultation consultationData={consultationData}/>
+      <Testimonal testimonalData={TestimonalData} />
+
+      <Consultation consultationData={consultationData} />
+
+      <LimitedSlots />
+
+      <VisitEyeCare />
+
+      <BestDeserve />
     </>
   );
 };

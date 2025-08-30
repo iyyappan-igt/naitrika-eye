@@ -1,0 +1,43 @@
+.bannerTag {
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  --tw-bg-opacity: 1;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.bannerTag p {
+  margin-bottom: 0 !important;
+  font-weight: 500;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .bannerTag {
+    font-size: 0.8rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bannerTag {
+    font-size: 0.75rem;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    gap: 4px;
+  }
+}

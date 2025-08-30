@@ -6,8 +6,13 @@ const Button = ({
   icon,
   isbtn1,
   isbtn2,
+  isbtn3,
   bgcolor,
   iconcolor,
+  prefixicon,
+  prefixcolor,
+  suffixicon,
+  suffixcolor,
 }) => {
   return (
     <button
@@ -23,6 +28,12 @@ const Button = ({
         <div className="d-flex justify-content-center align-items-center gap-3">
           <h6>{name}</h6>
           <DynamicIcon name={icon} color={iconcolor} />
+        </div>
+      ) : isbtn3 ? (
+        <div className="d-flex justify-content-center align-items-center gap-3">
+          <DynamicIcon name={prefixicon} color={prefixcolor} />
+          <h6>{name}</h6>
+          <DynamicIcon name={suffixicon} color={suffixcolor} />
         </div>
       ) : (
         <div className="text-center">

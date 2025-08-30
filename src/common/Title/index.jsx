@@ -22,7 +22,7 @@ const Title = ({
       {subtitle ? (
         <div
           className={` text-center d-flex justify-content-center  mt-3 ${styles.subtitle}`}
-          style={{ color: subtitlecolor }}
+          style={{ color: subtitlecolor ? subtitlecolor : "rgb(75 85 99)" }}
         >
           <p>{subtitle}</p>
         </div>
