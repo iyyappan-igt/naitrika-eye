@@ -227,20 +227,24 @@
 }
 
 @media (max-width: 1400px) {
-  .mainContainer{
+  .mainContainer {
     min-height: 830px;
     padding: 0 20px;
   }
+
   .title {
     font-size: 3.25rem;
-   width: 100%;
+    width: 100%;
   }
-  .container{
+
+  .container {
     gap: 30px;
   }
+
   .description {
-   width: 100%;
+    width: 100%;
   }
+
   .bannerImage img {
     height: 550px;
     width: 100%;
@@ -248,44 +252,61 @@
 }
 
 @media (max-width: 1200px) {
-  .mainContainer{
+  .mainContainer {
     min-height: 800px;
   }
+
   .title {
     font-size: 3rem;
     width: 100%;
   }
-  .container{
+
+  .container {
     gap: 30px;
   }
+
   .description {
     font-size: 1.35rem;
     width: 100%;
   }
-  .bannerImage{
+
+  .bannerImage {
     width: 48%;
   }
+
   .bannerImage img {
     height: 520px;
     width: 100%;
   }
-  
+
   .buttonGroup {
     flex-wrap: wrap;
-width: 90%;
+    width: 90%;
   }
-  .buttonGroup button{
+
+  .buttonGroup button {
     width: 100%;
   }
 
   .doctorCard {
     width: 85%;
   }
+
+  .round2 {
+    left: -22px;
+    bottom: -24px;
+  }
+
+  .round1 {
+    right: -22px;
+    top: -22px;
+
+  }
 }
 
 @media (max-width: 992px) {
   .mainContainer {
-    min-height: 1400px;
+    min-height: 1500px;
   }
 
   .container {
@@ -452,6 +473,7 @@ width: 90%;
     width: 95%;
     left: 10px;
     padding: 20px 15px;
+    bottom: 0px;
   }
 
   .doctorCard h3 {
@@ -475,7 +497,23 @@ width: 90%;
     width: 100%;
     margin-bottom: 10px;
   }
-  .buttonGroup{
+
+  .buttonGroup {
     width: 100%;
+  }
+
+  .round2 {
+    width: 100px;
+    height: 100px;
+    left: -17px;
+    bottom: -17px;
+  }
+
+  .round1 {
+    right: -18px;
+    top: -20px;
+  }
+  .mainContainer{
+    padding: 60px 30px;
   }
 }

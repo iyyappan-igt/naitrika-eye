@@ -17,7 +17,7 @@ const Vision = ({ visionData }) => {
           spantitlecolor={"#2563eb"}
         />
 
-        <div className="visiontype my-md-5 my-4 d-flex justify-content-xxl-between justify-content-center  gap-4 flex-wrap">
+        <div className="visiontype my-md-5 my-4 d-flex justify-content-center  gap-4 flex-wrap">
           {visionData?.map((data, i) => (
             <div
               className={`text-center ${styles.visioncard} commonshadow my-3 mx-3 mx-md-0`}

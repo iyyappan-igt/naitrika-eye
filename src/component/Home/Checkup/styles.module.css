@@ -104,16 +104,15 @@
 
 }
 
-@media (width < 992px) {
-    .checkupcard p {
-        height: fit-content;
-    }
 
-}
 
 @media (width < 768px) {
     .checkupsec {
         padding: 60px 0px;
+    }
+
+    .checkupcard p{
+        height: fit-content;
     }
 
     .stories p {
