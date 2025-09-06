@@ -173,10 +173,10 @@
 
 .doctorCard {
   position: absolute;
-  bottom: 30px;
-  right: 30px;
+  bottom: 20px;
+  left: 25px;
   background-color: rgba(255, 255, 255, 0.99);
-  padding: 30px 25px;
+  padding: 16px 25px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 90%;
@@ -193,7 +193,7 @@
   color: rgb(37, 99, 235);
   font-size: 0.9rem;
   margin: 10px 0 10px;
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 .round1 {
@@ -227,19 +227,19 @@
 }
 
 @media (max-width: 1400px) {
-  .mainContainer{
+  .mainContainer {
     min-height: 830px;
-    padding: 0 20px;
+    padding: 0 30px;
   }
   .title {
     font-size: 3.25rem;
-   width: 100%;
+    width: 100%;
   }
-  .container{
+  .container {
     gap: 30px;
   }
   .description {
-   width: 100%;
+    width: 100%;
   }
   .bannerImage img {
     height: 550px;
@@ -248,33 +248,34 @@
 }
 
 @media (max-width: 1200px) {
-  .mainContainer{
+  .mainContainer {
     min-height: 800px;
+    padding: 0 40px;
   }
   .title {
     font-size: 3rem;
     width: 100%;
   }
-  .container{
+  .container {
     gap: 30px;
   }
   .description {
     font-size: 1.35rem;
     width: 100%;
   }
-  .bannerImage{
+  .bannerImage {
     width: 48%;
   }
   .bannerImage img {
     height: 520px;
     width: 100%;
   }
-  
+
   .buttonGroup {
     flex-wrap: wrap;
-width: 90%;
+    width: 90%;
   }
-  .buttonGroup button{
+  .buttonGroup button {
     width: 100%;
   }
 
@@ -286,6 +287,7 @@ width: 90%;
 @media (max-width: 992px) {
   .mainContainer {
     min-height: 1400px;
+    padding: 0 60px;
   }
 
   .container {
@@ -344,13 +346,14 @@ width: 90%;
     min-height: auto;
     max-height: none;
     padding-bottom: 40px;
+    padding: 0 30px;
   }
 
   .container {
     width: 100%;
     flex-direction: column;
     padding: 40px 2px 0;
-    justify-content: end
+    justify-content: end;
   }
 
   .bannerContent {
@@ -404,7 +407,7 @@ width: 90%;
 
   .doctorCard {
     position: relative;
-    bottom: 50px;
+    bottom: 15px;
     left: 20px;
     width: 90%;
     padding: 30px 20px;
@@ -418,7 +421,7 @@ width: 90%;
   }
 
   .doctorCard p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
   }
 }
@@ -446,12 +449,15 @@ width: 90%;
   .bannerImage img {
     height: 550px;
     width: 100%;
+    object-position: bottom;
   }
 
   .doctorCard {
     width: 95%;
     left: 10px;
-    padding: 20px 15px;
+    bottom: 0;
+     margin-top: -165px;
+    padding: 25px 15px;
   }
 
   .doctorCard h3 {
@@ -475,7 +481,7 @@ width: 90%;
     width: 100%;
     margin-bottom: 10px;
   }
-  .buttonGroup{
+  .buttonGroup {
     width: 100%;
   }
 }

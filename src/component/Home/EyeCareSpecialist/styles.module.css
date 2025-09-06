@@ -1,5 +1,5 @@
 .mainContainer {
-  min-height: 700px;
+  min-height: 750px;
   height: auto;
   background-color: #ffffff;
 }
@@ -28,6 +28,8 @@
   height: 100%;
   object-fit: cover;
   border-radius: 1rem;
+  transform: scale(1.1);
+  object-position: center;
 }
 .tag {
   position: absolute;
@@ -92,11 +94,21 @@ font-size: 2.25rem;
   height: 40px;
   object-fit: contain;
 }
-
+.itemIcon h3{
+    width: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+    border-radius: 10px;
+    margin-bottom: 0;
+}
 .itemContent h5{
     font-weight: 600;
     font-size: 16px;
      width: 80%;
+    margin-bottom: 8px;
+
 }
 
 .itemContent p{
@@ -114,11 +126,11 @@ font-size: 2.25rem;
 
 @media (max-width: 1400px) {
   .container {
-    padding: 70px 10px 0;
+    padding: 70px 10px 80px;
   }
   
   .containerImage {
-    height: 480px;
+    height: 650px;
   }
   
   .title {
@@ -175,7 +187,7 @@ font-size: 2.25rem;
   }
   
   .containerImage {
-    height: 450px;
+    height: 680px;
     width: 100%;
   }
   
@@ -217,6 +229,9 @@ font-size: 2.25rem;
   
   .badgeContainer {
     margin-top: 20px;
+  }
+  .containerImage img{
+    object-position: center;
   }
 }
 

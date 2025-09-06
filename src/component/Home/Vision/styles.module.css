@@ -7,12 +7,13 @@
 
 .visioncard {
     background-color: #fff;
-    padding: 30px 50px;
+    padding: 30px 40px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     width: 470px;
-
-}
+    min-height: 400px;
+    height: auto;
+}   
 
 .visioncard:hover {
     transform: translateY(-15px);

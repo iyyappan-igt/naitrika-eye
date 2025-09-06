@@ -7,19 +7,21 @@ import LimitedSlots from "@/component/Home/LimitedSlots";
 import Testimonal from "@/component/Home/Testimonal";
 import Vision from "@/component/Home/Vision";
 import VisitEyeCare from "@/component/Home/VisitEyeCare";
+import { bannerData } from "@/constant/banner";
 import { CheckupData } from "@/constant/checkup";
 import { consultationData } from "@/constant/consultation";
+import { eyecareSpecialistData } from "@/constant/eyecareSpecialist";
 import { TestimonalData } from "@/constant/testimonal";
 import { VisionData } from "@/constant/vision";
 
 const HomePageComponent = () => {
   return (
     <>
-      <Banner />
+      <Banner bannerData={bannerData} />
 
       <Vision visionData={VisionData} />
 
-      <EyeCareSpecialist />
+      <EyeCareSpecialist specialistData={eyecareSpecialistData} />
 
       <Checkup checkupData={CheckupData} />
 
