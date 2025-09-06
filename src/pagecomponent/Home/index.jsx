@@ -7,12 +7,12 @@ import LimitedSlots from "@/component/Home/LimitedSlots";
 import Testimonal from "@/component/Home/Testimonal";
 import Vision from "@/component/Home/Vision";
 import VisitEyeCare from "@/component/Home/VisitEyeCare";
-import { bannerData } from "@/constant/banner";
-import { CheckupData } from "@/constant/checkup";
-import { consultationData } from "@/constant/consultation";
-import { eyecareSpecialistData } from "@/constant/eyecareSpecialist";
-import { TestimonalData } from "@/constant/testimonal";
-import { VisionData } from "@/constant/vision";
+import { bannerData } from "@/constant/Home/banner";
+import { CheckupData } from "@/constant/Home/checkup";
+import { consultationData } from "@/constant/Home/consultation";
+import { eyecareSpecialistData } from "@/constant/Home/eyecareSpecialist";
+import { TestimonalData } from "@/constant/Home/testimonal";
+import { VisionData } from "@/constant/Home/vision";
 
 const HomePageComponent = () => {
   return (
